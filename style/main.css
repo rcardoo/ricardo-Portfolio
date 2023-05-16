@@ -133,10 +133,10 @@
   border-bottom: 3px solid rgb(0, 157, 255);
 }
 
-/* .main__certificados {
+.main__certificados {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 700px;
 }
 
@@ -153,9 +153,27 @@
   width: 80%;
 }
 
-.carousel-inner {
+.carousel {
+  height: 80%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.carousel-item img {
+  height: 100%;
+}
+
+.carousel-inner {
+  /* align-items: center;
+  background-color: blue;
+  height: 100%;
+  display: flex;
+  justify-content: space-around; */
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  height: 90%;
+  width: 60%;
 }
 
 .btn-carousel {
@@ -177,4 +195,133 @@
 
 .visually-hidden {
   color: white;
-} */
+}
+
+@media only screen and (max-device-width: 900px) {
+  .main__inicio {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__inicio div {
+    flex-direction: column;
+    width: 90%;
+    align-items: first baseline;
+    order: 1;
+  }
+
+  .main_inicio--imagem {
+    width: 300px;
+  }
+
+  .main__sobre {
+    display: flex;
+  }
+
+  .main_sobre--texto {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    height: 100%;
+  }
+
+  .main__habilidades {
+    height: 450px;
+    width: 100%;
+    justify-content: space-around;
+  }
+  
+  .main__habilidades div {
+    width: 100%;
+    justify-content: center;
+    margin-left: 10px;
+  }
+
+  .main_habilidades--titulo {
+    font-size: 30px;
+  }
+
+  .main_habilidades--texto {
+    width: 90%;
+    height: 100px;
+    flex-wrap: wrap;
+  }
+
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main_habilidades--logo {
+    width: 100px;
+    transition: 1s;
+  }
+
+  .main__certificados  {
+    justify-content: space-around;
+    width: 600px;
+  }
+
+  #certificados {
+    margin-top: 50px;
+    height: 500px;
+    align-items: center;
+    width: 96%;
+  }
+  
+  #carouselExample {
+    margin: 0px;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    flex-direction: row;
+  }
+
+  .main_certificados--titulo {
+    margin-right: 0;
+    align-items: end;
+    font-size: 30px;
+    width: 95%;
+  }
+
+  .btn-carousel {
+    border-radius: 50px 50px;
+    border: 2px solid var(--cor-texto-secundaria);
+    box-shadow: none;
+    width: 30px;
+    margin: auto 0;
+    height: 20%;
+    transition: 0.3s;
+  }
+
+  .btn-carousel:hover {
+    box-shadow: none;
+  }
+
+  .carousel-inner {
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .carousel-item {
+    margin: 0 auto;
+    height: 240px;
+    width: 90%;
+  }
+
+  .carousel-item img {
+    margin: 0 auto;
+    height: 200px;
+  }
+
+}
