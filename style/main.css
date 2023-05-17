@@ -231,13 +231,13 @@
   .main__habilidades {
     height: 450px;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
   }
   
   .main__habilidades div {
     width: 100%;
-    justify-content: center;
-    margin-left: 10px;
+    justify-content: space-around;
+    margin-left: 20px;
   }
 
   .main_habilidades--titulo {
@@ -265,9 +265,14 @@
     width: 600px;
   }
 
+  .main_certificados--titulo {
+    text-align: center;
+    justify-content: space-around;
+  }
+
   #certificados {
     margin-top: 50px;
-    height: 500px;
+    height: 400px;
     align-items: center;
     width: 96%;
   }
@@ -280,7 +285,7 @@
 
   .carousel {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     height: 50%;
     flex-direction: row;
   }
@@ -309,13 +314,13 @@
   .carousel-inner {
     align-items: center;
     margin: 0 auto;
-    height: 100%;
-    width: 100%;
+    height: 600px;
+    width: 88%;
   }
 
   .carousel-item {
     margin: 0 auto;
-    height: 240px;
+    height: 205px;
     width: 90%;
   }
 
