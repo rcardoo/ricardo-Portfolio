@@ -75,6 +75,32 @@ header p {
   font-weight: bold;
 }
 
+.sobre {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 400px;
+}
+
+.sobre h2 {
+  color: #B548D7;
+  font-size: 50px;
+  font-weight: bold
+}
+
+.sobre p {
+  color: #BEBEBF;
+
+  display: flex;
+  align-items: center;
+  line-height: 1.5em;
+  font-size: 20px;
+
+  width: 50%;
+  height: 50%;
+}
+
 .contatos {
   height: 100px;
   margin-top: 30px;
@@ -201,13 +227,41 @@ header p {
   width: 400px;
 }
 
-@media (max-width: 768px) {
+footer {
+  color: #BEBEBF;
+  text-align: center;
+  font-size: 12px;
+
+  padding: 64px;
+  height: 80px;
+}
+
+
+
+@media (max-width: 877px) {
   header {
     display: none;
   }
 
   header p {
     font-size: 16px;
+  }
+
+  .sobre {
+    flex-direction: column;
+  }
+
+  .sobre h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .sobre p {
+    width: 100%;
+    padding: 64px;
+
+    font-size: 12px;
+    text-align: center;
   }
 
   .contatos div {
@@ -250,6 +304,7 @@ header p {
 
   .habilidades__textos p {
     text-align: center;
+    font-size: 12px;
   }
 
   .certificados {
