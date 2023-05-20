@@ -248,7 +248,9 @@ footer {
   }
 
   .sobre {
+    padding-bottom: 64px;
     flex-direction: column;
+    /* height: 300px; */
   }
 
   .sobre h2 {
@@ -258,7 +260,7 @@ footer {
 
   .sobre p {
     width: 100%;
-    padding: 64px;
+    padding: 0px 64px;
 
     font-size: 12px;
     text-align: center;
