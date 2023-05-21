@@ -79,6 +79,27 @@ header p {
   font-weight: bold;
 }
 
+.inicio {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 64px;
+
+  background-color: #121214;
+  background-image: linear-gradient(160deg, #121214 0%, #231037 100%);
+}
+
+.inicio h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.inicio img {
+  width: 400px;
+}
+
 .sobre {
   display: flex;
   align-items: center;
@@ -134,27 +155,6 @@ header p {
   background-image: linear-gradient(160deg, #B548D7 0%, #231037 100%);
 }
 
-.inicio {
-  height: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 64px;
-
-  background-color: #121214;
-  background-image: linear-gradient(160deg, #121214 0%, #231037 100%);
-}
-
-.inicio h1 {
-  color: white;
-  font-size: 50px;
-  font-weight: bold;
-}
-
-.inicio img {
-  width: 400px;
-}
-
 .habilidades {
   height: 500px;
   padding: 64px;
@@ -205,13 +205,10 @@ header p {
 }
 
 .certificados div {
-  /* border: 1px solid;
-  border-image: linear-gradient(#c248e7, #BEBEBF) 1; */
-
   overflow-y: scroll;
 
   height: 80%;
-  width: 30%;
+  width: 40%;
 
   display: flex;
   flex-direction: column;
@@ -229,6 +226,70 @@ header p {
 .certificados div img {
   padding: 10px;
   width: 400px;
+}
+
+.projetos {
+  height: 600px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.projetos a {
+  text-decoration: none;
+}
+
+.projetos h2 {
+  color: #B548D7;
+  font-size: 50px;
+  font-weight: bold
+}
+
+.container {
+  height: 90%;
+  width: 50%;
+  margin: 0px;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card_projeto {
+  height: 150px;
+  width: 300px;
+
+  border-radius: 10px;
+
+  background-color: #121214;
+  background-image: linear-gradient(160deg, #121214 0%, #231037 100%);
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+
+  transition: 1s;
+}
+
+.card_projeto:hover {
+  box-shadow: rgba(141, 110, 159, 0.2) 0px 8px 24px;
+}
+
+.card_projeto h3 {
+  color: #BEBEBF;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card_projeto div {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 footer {
@@ -356,12 +417,26 @@ footer a:active {
   }
 
   .certificados div {
-    width: 100%;
+    width: 110%;
     height: 70%;
     overflow-x: hidden;
   }
 
   .certificados div img {
     width: 200px;
+  }
+
+  .projetos {
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .container {
+    height: 60%;
+    width: 100%;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 }
