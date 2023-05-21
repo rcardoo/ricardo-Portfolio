@@ -388,7 +388,12 @@ footer a:active {
   }
 
   .habilidades {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
     flex-direction: column;
+    justify-content: center;
+    gap: 5em;
   }
 
   .habilidades__icons {
