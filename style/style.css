@@ -280,10 +280,10 @@ footer a:active {
   }
 
   .sobre {
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     flex-direction: column;
     justify-content: center;
-    /* height: 300px; */
+    height: 300px;
   }
 
   .sobre h2 {
@@ -297,6 +297,10 @@ footer a:active {
 
     font-size: 12px;
     text-align: center;
+  }
+
+  .contatos {
+    margin-top: 0px;
   }
 
   .contatos div {
