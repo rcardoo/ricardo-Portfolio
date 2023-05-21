@@ -440,8 +440,12 @@ footer a:active {
   .container {
     height: 60%;
     width: 100%;
+    padding-right: 0px;
 
-    overflow-y: scroll;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    overflow-y: hidden;
     overflow-x: hidden;
   }
 }
